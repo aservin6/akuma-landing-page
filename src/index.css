@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#carousel {
+body {
     overflow-anchor: none;
 }
