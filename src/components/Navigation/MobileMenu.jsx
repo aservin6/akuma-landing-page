@@ -5,7 +5,7 @@ const MobileMenu = ({ showMenu }) => {
     <>
       {
         <div
-          className={`fixed top-14 left-0 z-50 w-screen bg-zinc-800 text-sm transition-all duration-500 md:hidden ${
+          className={`fixed top-14 left-0 z-50 w-screen bg-zinc-800 text-sm text-zinc-100 transition-all duration-500 md:hidden ${
             !showMenu && "opacity-0 -translate-y-96"
           } ${showMenu && "opacity-100"}`}
         >
