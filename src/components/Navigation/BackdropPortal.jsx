@@ -16,7 +16,7 @@ export const Backdrop = ({ showMenu, onClose }) => {
         <div
           onClick={onClose}
           className={`fixed bottom-0 w-full h-[calc(100vh-200px)] bg-black bg-opacity-30 transition-opacity delay-150 duration-700 ${
-            showMenu ? "opacity-100 z-40" : "opacity-0 -z-50"
+            showMenu ? "opacity-100 z-50" : "opacity-0 -z-50"
           }`}
         ></div>
       }
