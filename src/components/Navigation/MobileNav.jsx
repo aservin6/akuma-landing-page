@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import MobileMenu from "./MobileMenu";
 import BackdropPortal from "./BackdropPortal";
 
 const MobileNav = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const closeMenu = () => setShowMenu(false);
   const openMenu = () => setShowMenu(true);
@@ -17,13 +18,26 @@ const MobileNav = () => {
     }
   };
 
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="fixed top-0 z-50 w-screen px-5 bg-opacity-50 md:hidden bg-zinc-300 backdrop-blur">
+      <nav className={`fixed top-0 z-50 w-screen px-5 md:hidden transition-all duration-1000 ${showMenu || scrollPosition > 300 ? "bg-zinc-800 text-zinc-100 bg-opacity-100" : "bg-opacity-0"}`}>
         <MobileMenu showMenu={showMenu} />
         <BackdropPortal onClose={closeMenu} showMenu={showMenu} />
         <div className="flex items-center justify-between max-w-6xl mx-auto h-14">
-          <div className="text-2xl md:text-3xl text-zinc-900 font-bold border-[3px] border-zinc-900 px-1 hover:cursor-default whitespace-nowrap">
+          <div className={`text-2xl md:text-3xl  font-bold border-[3px] px-1 hover:cursor-default whitespace-nowrap ${showMenu || scrollPosition > 300 ? "text-zinc-100 border-zinc-100" : "border-zinc-900 text-zinc-900"}`}>
             悪魔
           </div>
           <div className="flex items-center gap-2">

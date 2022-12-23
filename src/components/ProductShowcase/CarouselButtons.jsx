@@ -14,7 +14,7 @@ const CarouselButtons = () => {
         href="#item1"
         className={`p-5 bg-zinc-800 rounded-full ${
           selectedImage == 1 &&
-          "outline-1 outline-zinc-400 outline outline-offset-4"
+          "ring-1 ring-zinc-400 ring-offset-4"
         }`}
         data-image={1}
       ></a>
@@ -23,7 +23,7 @@ const CarouselButtons = () => {
         href="#item2"
         className={`p-5 bg-rose-800 rounded-full ${
           selectedImage == 2 &&
-          "outline-1 outline-zinc-400 outline outline-offset-4"
+          "ring-1 ring-zinc-400 ring-offset-4"
         }`}
         data-image={2}
       ></a>
@@ -32,7 +32,7 @@ const CarouselButtons = () => {
         href="#item3"
         className={`p-5 bg-zinc-500 rounded-full ${
           selectedImage == 3 &&
-          "outline-1 outline-zinc-400 outline outline-offset-4"
+          "ring-1 ring-zinc-400 ring-offset-4"
         }`}
         data-image={3}
       ></a>
@@ -41,7 +41,7 @@ const CarouselButtons = () => {
         href="#item4"
         className={`p-5 bg-blue-800 rounded-full ${
           selectedImage == 4 &&
-          "outline-1 outline-zinc-400 outline outline-offset-4"
+          "ring-1 ring-zinc-400 ring-offset-4"
         }`}
         data-image={4}
       ></a>
@@ -50,7 +50,7 @@ const CarouselButtons = () => {
         href="#item5"
         className={`p-5 bg-indigo-900 rounded-full ${
           selectedImage == 5 &&
-          "outline-1 outline-zinc-400 outline outline-offset-4"
+          "ring-1 ring-zinc-400 ring-offset-4"
         }`}
         data-image={5}
       ></a>
