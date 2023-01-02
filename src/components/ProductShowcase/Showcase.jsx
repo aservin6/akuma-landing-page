@@ -81,13 +81,13 @@ const Showcase = () => {
             ref={carousel}
           />
         </div>
-        <h3
+        <h2
           className={`text-6xl font-bold order-first md:order-none transition-opacity duration-1000 tracking-tight h-fit ${
             inView ? "opacity-100" : "opacity-0"
           }`}
         >
           Available in multiple colors to match any setup
-        </h3>
+        </h2>
         <div className="flex items-start gap-5 md:col-start-2 -order-1 md:order-none w-fit">
           <button
             onClick={() => {
@@ -96,6 +96,7 @@ const Showcase = () => {
             className={`p-5 rounded-full bg-zinc-800 ${
               activeIndex == 0 && "ring-1 ring-zinc-400 ring-offset-4"
             }`}
+            aria-label="show black keyboard"
           ></button>
           <button
             onClick={() => {
@@ -104,6 +105,7 @@ const Showcase = () => {
             className={`p-5 rounded-full bg-rose-800 ${
               activeIndex == 1 && "ring-1 ring-zinc-400 ring-offset-4"
             }`}
+            aria-label="show red keyboard"
           ></button>
           <button
             onClick={() => {
@@ -112,6 +114,7 @@ const Showcase = () => {
             className={`p-5 rounded-full bg-zinc-500 ${
               activeIndex == 2 && "ring-1 ring-zinc-400 ring-offset-4"
             }`}
+            aria-label="show gray keyboard"
           ></button>
           <button
             onClick={() => {
@@ -120,6 +123,7 @@ const Showcase = () => {
             className={`p-5 rounded-full bg-blue-800 ${
               activeIndex == 3 && "ring-1 ring-zinc-400 ring-offset-4"
             }`}
+            aria-label="show blue keyboard"
           ></button>
           <button
             onClick={() => {
@@ -128,6 +132,7 @@ const Showcase = () => {
             className={`p-5 rounded-full bg-indigo-900 ${
               activeIndex == 4 && "ring-1 ring-zinc-400 ring-offset-4"
             }`}
+            aria-label="show purple keyboard"
           ></button>
         </div>
       </div>

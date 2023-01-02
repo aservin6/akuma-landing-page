@@ -41,7 +41,7 @@ const MobileNav = () => {
             悪魔
           </div>
           <div className="flex items-center gap-2">
-            <button onClick={toggleMenu} className="p-3">
+            <button onClick={toggleMenu} className="p-3" aria-label="open menu">
               <BsChevronDown className="w-5 h-5" />
             </button>
             <a
