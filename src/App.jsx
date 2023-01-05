@@ -5,7 +5,7 @@ import Navbar from "./components/Navigation/Navbar";
 import MobileNav from "./components/Navigation/MobileNav";
 import BackToTopButton from "./components/UI/BackToTopButton";
 import ScrollDownIndicator from "./components/UI/ScrollDownIndicator";
-import Showcase from "./components/ProductShowcase/Showcase";
+import Carousel from "./components/Carousel/Carousel";
 import Gallery from "./components/Gallery/Gallery";
 import CallToAction from "./components/CallToAction/CallToAction";
 import FooterLinks from "./components/Footer/FooterLinks";
@@ -20,7 +20,7 @@ const App = () => {
       </header>
       <main>
         <Details />
-        <Showcase />
+        <Carousel />
         <Gallery />
       </main>
       <footer>

@@ -62,7 +62,7 @@ const Showcase = () => {
       <img src={akumaPurple} alt="purple keyboard" className="w-full" />
     </div>,
   ];
-
+  
   return (
     <section
       id="showcase"

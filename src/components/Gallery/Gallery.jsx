@@ -3,10 +3,10 @@ import ImageOne from "./ImageOne";
 import ImageTwo from "./ImageTwo";
 import ImageThree from "./ImageThree";
 
-const Gallery = () => {  
+const Gallery = () => {
   return (
-    <section id="gallery" className="px-5 bg-zinc-800">
-      <div className="grid center max-w-xl md:max-w-6xl py-20 mx-auto space-y-10 text-white md:space-y-0 md:gap-x-3 gap-y-8 md:gap-y-0 md:grid-cols-[66.33%_1fr]">
+    <section id="gallery" className="px-5 pt-10 md:py-20 bg-zinc-800">
+      <div className="grid max-w-xl grid-rows-2 gap-3 mx-auto text-white md:max-w-6xl md:space-y-0 md:grid-cols-[2fr_1fr]">
         <ImageOne />
         <ImageTwo />
         <ImageThree />

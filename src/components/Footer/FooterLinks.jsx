@@ -3,7 +3,7 @@ import { BsGlobe, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const FooterLinks = () => {
   return (
-    <div className="py-8 text-white bg-zinc-800">
+    <div className="py-8 font-semibold text-white bg-zinc-800">
       <div className="max-w-6xl mx-auto">
         <div className="grid justify-between grid-cols-2">
           <ul className="flex flex-col gap-2 px-5">
