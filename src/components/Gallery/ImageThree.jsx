@@ -13,7 +13,7 @@ const ImageThree = () => {
     <div ref={ref} className="relative w-full pb-16 md:pb-0">
       <img
         src={chromaWeight}
-        className="border border-white rounded-md border-opacity-30 md:m-0"
+        className="border h-full w-full aspect-square border-white rounded-md border-opacity-30 md:m-0"
         alt="chroma brass weight"
       />
       <p

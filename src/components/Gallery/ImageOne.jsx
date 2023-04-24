@@ -11,7 +11,11 @@ const ImageOne = () => {
 
   return (
     <div ref={ref} className="relative pb-16 md:row-span-2 md:pb-0">
-      <img src={brassWeights} className="h-full border border-white rounded-md border-opacity-30 md:m-0" alt="brass weights" />
+      <img
+        src={brassWeights}
+        className="h-full border w-full aspect-square border-white rounded-md border-opacity-30 md:m-0"
+        alt="brass weights"
+      />
       <p
         className={`absolute mt-1 text-2xl md:text-5xl md:bottom-4 font-semibold translate-x-full transition-all duration-1000 ${
           inView ? "opacity-100 translate-x-0 md:translate-x-4" : "opacity-0"

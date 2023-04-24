@@ -9,7 +9,7 @@ const MobileMenu = ({ showMenu }) => {
             !showMenu && "opacity-0 -translate-y-96"
           } ${showMenu && "opacity-100"}`}
         >
-          <ul className="flex flex-col">
+          <div className="flex flex-col">
             <a
               href="#hero"
               className="py-3.5 pl-5 hover:bg-zinc-400 hover:bg-opacity-30 focus:bg-zinc-400 focus:bg-opacity-30"
@@ -28,7 +28,7 @@ const MobileMenu = ({ showMenu }) => {
             >
               Showcase
             </a>
-          </ul>
+          </div>
         </div>
       }
     </>

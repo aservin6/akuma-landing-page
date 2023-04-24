@@ -7,15 +7,22 @@ const FooterLinks = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid justify-between grid-cols-2">
           <ul className="flex flex-col gap-2 px-5">
-            <a href="https://kbdfans.com/" className="p-1 hover:text-zinc-400">
-              KBDFans
-            </a>
-            <a
-              href="https://www.mightysetups.com/"
-              className="p-1 hover:text-zinc-400"
-            >
-              MightySetups (Keyboard Creator)
-            </a>
+          <li>
+              <a
+                href="https://kbdfans.com/"
+                className="p-1 hover:text-zinc-400"
+              >
+                KBDFans
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.mightysetups.com/"
+                className="p-1 hover:text-zinc-400"
+              >
+                MightySetups (Keyboard Creator)
+              </a>
+            </li>
           </ul>
           <ul className="flex flex-col items-end gap-2 px-5">
             <li>
